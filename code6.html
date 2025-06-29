@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roshini Tavva – Portfolio</title>
+
+  <!-- Font Awesome 6 (free) -->
+  <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+  <style>
+    :root { --primary:#6A1B9A; --secondary:#f5f5f5; }
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;font-family:"Segoe UI",sans-serif;}
+    html{scroll-behavior:smooth;} body{background:#fff;color:#333;line-height:1.6;}
+
+    /* Header */
+    header{position:fixed;top:0;width:100%;background:rgba(255,255,255,.95);
+           box-shadow:0 2px 8px rgba(0,0,0,.1);padding:20px 40px;z-index:1000;}
+    nav{display:flex;justify-content:space-between;align-items:center;}
+    .logo{font-size:1.5rem;font-weight:600;color:var(--primary);}
+    .nav-links a{margin-left:25px;text-decoration:none;color:#333;transition:color .3s;}
+    .nav-links a:hover{color:var(--primary);}
+
+    /* Sections */
+    section{padding:100px 40px;max-width:1000px;margin:auto;}
+    .section-title{font-size:2.2rem;text-align:center;margin-bottom:40px;color:var(--primary);}
+
+    /* Hero */
+    .hero{padding:80px 0 30px;text-align:center;background:var(--secondary);}
+    .hero h1{font-size:2.8rem;color:var(--primary);}
+    .hero p{margin-top:10px;font-size:1.2rem;}
+    .hero img{width:220px;height:220px;border-radius:50%;margin-top:5px;object-fit:cover;}
+
+    /* Experience */
+    .experience-entry{background:#fff;box-shadow:0 3px 6px rgba(0,0,0,.08);
+                      border-radius:8px;padding:20px;margin-bottom:25px;}
+    .experience-entry h3{color:var(--primary);margin-bottom:4px;}
+    .experience-entry span{font-size:.9rem;color:#666;}
+    .experience-entry ul{margin-top:10px;padding-left:20px;}
+
+    /* Skills */
+    .skills-container{display:flex;gap:20px;flex-wrap:wrap;justify-content:center;}
+    .skill-card{background:var(--secondary);border-radius:10px;padding:20px;width:300px;
+                box-shadow:0 2px 6px rgba(0,0,0,.1);}
+    .skill-card h3{margin-bottom:10px;color:var(--primary);text-align:center;}
+    .skill-card ul{list-style:none;padding:0;text-align:center;}
+    .skill-card ul li{padding:5px 0;color:#444;}
+
+    .resume-button{display:block;margin:40px auto 0;text-align:center;}
+    .resume-button a{background:var(--primary);color:#fff;padding:12px 24px;border-radius:30px;
+                     text-decoration:none;transition:background .3s;}
+    .resume-button a:hover{background:#4a1271;}
+
+    /* Projects */
+    .projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;}
+    .project-item{background:#fff;border-radius:8px;box-shadow:0 3px 6px rgba(0,0,0,.08);overflow:hidden;}
+    .project-item img{width:100%;height:150px;object-fit:cover;}
+    .project-item div{padding:15px;}
+    .project-item h4{margin-bottom:6px;color:var(--primary);font-size:1.1rem;}
+    .project-item a{text-decoration:none;color:var(--primary);font-size:.9rem;}
+
+    /* Contact */
+    .contact-links a{margin:0 10px;font-size:1.6rem;color:var(--primary);transition:transform .3s;}
+    .contact-links a:hover{transform:translateY(-4px);}
+
+    #about{padding-top:5px;}
+
+    @media(max-width:600px){
+      .nav-links{display:none;}
+      .skills-container{flex-direction:column;align-items:center;}
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="logo">Roshini Tavva</div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="resume.pdf" download>Resume</a>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <h1>Hi, I'm Roshini</h1>
+    <p>Machine Learning Enthusiast | Data Analytics | Prompt Engineer</p>
+    <img src="profilepic.jpg" alt="Roshini's Profile Picture">
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <p>
+      Final‑year B.Tech student at Anil Neerukonda Institute of Technology & Sciences (ANITS),
+      passionate about AI, ML, and data‑driven problem solving. Active GitHub contributor
+      (<a href="https://github.com/Roshini1369" target="_blank">@Roshini1369</a>) with projects
+      from sales forecasting to chatbot development.
+    </p>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <h2 class="section-title">Experience</h2>
+    <div class="experience-entry">
+      <h3>Machine Learning Intern – Oasis Infobyte</h3>
+      <span>Apr 15 – May 15 2025</span>
+      <ul>
+        <li>Built and evaluated ML models for classification and regression tasks.</li>
+        <li>Implemented data‑preprocessing pipelines in Python.</li>
+      </ul>
+    </div>
+    <div class="experience-entry">
+      <h3>Prompt Engineering Intern – Future Interns</h3>
+      <span>Apr – May 2025</span>
+      <ul>
+        <li>Designed prompts to steer Large Language Models.</li>
+        <li>Documented best practices and built a prompt‑testing framework.</li>
+      </ul>
+    </div>
+    <div class="experience-entry">
+      <h3>Data Analytics Job Simulation – Deloitte</h3>
+      <span>Virtual Internship • 2025</span>
+      <ul>
+        <li>Analyzed business data in Excel & Tableau; presented KPIs.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2 class="section-title">Technical Skills</h2>
+    <div class="skills-container">
+      <div class="skill-card">
+        <h3>Machine Learning</h3>
+        <ul><li>NumPy</li><li>Pandas</li><li>TensorFlow</li><li>Data Visualization</li></ul>
+      </div>
+      <div class="skill-card">
+        <h3>Web Development</h3>
+        <ul><li>HTML</li><li>CSS</li><li>JavaScript</li><li>React</li></ul>
+      </div>
+      <div class="skill-card">
+        <h3>Programming Skills</h3>
+        <ul><li>C</li><li>Python</li><li>Java (basics)</li><li>Data Structures & Algorithms</li></ul>
+      </div>
+    </div>
+    <div class="resume-button">
+      <a href="C:\Users\roshi\OneDrive\Documents\my_portfolio\resume.pdf" download>Download My Resume</a>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid">
+      <div class="project-item">
+        <img src="sales-forecast.jpg" alt="Sales Forecasting">
+        <div>
+          <h4>Sales Forecasting</h4>
+          <p>Time‑series pipeline predicting retail sales.</p>
+          <a href="https://github.com/Roshini1369/FUTURE_ML_01" target="_blank">GitHub</a>
+        </div>
+      </div>
+      <div class="project-item">
+        <img src="stock-lstm.jpg" alt="Stock Prediction">
+        <div>
+          <h4>Stock Price Prediction</h4>
+          <p>LSTM model forecasting stock prices.</p>
+          <a href="https://github.com/Roshini1369/FUTURE_ML_02" target="_blank">GitHub</a>
+        </div>
+      </div>
+      <div class="project-item">
+        <img src="resume-screener.jpg" alt="Resume Screener">
+        <div>
+          <h4>AI Resume Screener</h4>
+          <p>Automatic resume short‑listing using NLP.</p>
+          <a href="https://github.com/Roshini1369/resume-screener" target="_blank">GitHub</a>
+        </div>
+      </div>
+      <div class="project-item">
+        <img src="chatbot.jpg" alt="Chatbot">
+        <div>
+          <h4>Customer Support Chatbot</h4>
+          <p>Conversational AI built with Rasa.</p>
+          <a href="https://github.com/Roshini1369/FUTURE_ML_03" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- Contact -->
+<section id="contact">
+    <h2 class="section-title">Get in Touch</h2>
+    <div style="text-align: center; max-width: 700px; margin: 0 auto;">
+      <p style="font-size: 1.1rem; margin-bottom: 20px;">
+        Feel free to reach out for collaboration, projects, or internship opportunities!
+      </p>
+  
+      <div style="margin-bottom: 25px;">
+        <a href="resume.pdf" download class="resume-button"
+           style="display: inline-block; background-color: var(--primary); color: #fff;
+                  padding: 12px 24px; border-radius: 30px; text-decoration: none; transition: background 0.3s;">
+          Download Resume
+        </a>
+      </div>
+  
+      <div class="contact-links" style="font-size: 2rem;">
+        <a href="https://github.com/Roshini1369" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:roshinitavva@gmail.com" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/roshini-tavva-0531362a6" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Smooth scroll -->
+  <script>
+    document.querySelectorAll('a[href^=\"#\"]').forEach(link =>
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelector(link.getAttribute('href'))
+                .scrollIntoView({ behavior:'smooth' });
+      })
+    );
+  </script>
+</body>
+</html>
